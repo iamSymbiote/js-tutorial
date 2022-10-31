@@ -76,23 +76,24 @@ var fun3 = function () {
     if (h < 100) {
         var f = (h + 1) 
     
-        console.log(f);  // bu ve alttaki abi en basta undefined geldigi icin konsola hic basmadi diye dusunuyorum, NaN olabilirdi belki asagidakiler gibi ama niye olmadi bilemedim, konusuruz.
-        console.log(h);
+        console.log(f);  
+        console.log(h);  // condit icine hic girmedigi icin basmadi.
     }
 
     for (var i = 0; i < 10; i++) {
         var n = i
         m = (m + i)
+        console.log(n);
     }
 
-    console.log(n); // 9   // alacagi deger 10'a kadar oldugundan 9 geldi.
+    console.log(n); // 9   // 
     console.log(m); // 46  // 1 2 7 11 16 22 29 37 46 diye eklenerek gidip 10.da aldigimiz degeri yaziyor, sebep 85.satir. 85'in altina console.log(m) atip cozdum bunuda sinsinati :P
 
     var f = h + g
 
-    console.log(f); // NaN // 74. satirda undef bir deger  +1 yapmaya calisinda sonuc number olmadigindan NaN atti.
+    console.log(f); // NaN // 74. satirda undef bir deger  +1 yapmaya calisinda sonuc number olmadigindan NaN atti.   // 92
     console.log(g); // 98  // bu da icerde yine tanimlanmadigi icin globalki degerini cekti.
-    console.log(h); // NaN // bunun sebebi de ayni F ile.
+    console.log(h); // NaN // bunun sebebi de ayni F ile.    /// 74. 
 
     window.f = h
     g = (g + 1)
