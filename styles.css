@@ -1,57 +1,112 @@
-.slider{
-    width: 1196px;
-    height: 422px;
-    left: 202px;
-    top: 389px;
+html, body{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    color: #1D2144;
+    background-color: #E5E5E5;
 }
 
-.slider-head{
-    width: 430px;
-    height: 90px;
-    left: 585px;
-    top: 389px;
-    font-family: 'Mulish';
-    font-style: normal;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     text-align: center;
-    color: #1D2144;
 }
 
-.slider-wrap .slider-box{
-    width: 502px;
-    height: 209px;
-    left: 288px;
-    top: 536px;
-    background: #FFFFFF;
+.slider-wrapper{
+    display: flex;
+}
+
+.slider-slide{
+    width: 50%;
+    box-sizing: content-box;
+    margin-right: 10px;
+}
+.slider-slide:last-child{
+    margin-right: 0;
+}
+
+.slider-card{
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    padding: 40px 35px 40px 40px;
+    background-color: #FFFFFF;
     box-shadow: 0px 25px 25px -20px rgba(1, 43, 154, 0.16);
     border-radius: 20px;
 }
 
-.slider-box img{
+.slider-figure{
+    display: flex;
+}
+
+.img-wrap{
     width: 109px;
     height: 109px;
-    left: 328px;
-    top: 576px;
     background: #F4F7FF;
     border-radius: 15px;
+    margin: 40px 20px 60px 20px;
 }
 
-.arrow-l{
-    border-bottom: 1px solid #d1d5db;
-    border-left: 1px solid #d1d5db;
-    transform: translateX(25%) rotate(45deg);
-    height: 16px;
-    width: 16px;
-    color: #757BB1;
+.img-wrap img{
+    padding: 28px 27px 28px 27px;
 }
 
-.arrow-r{
-    border-right: 1px solid #d1d5db;
-    border-top: 1px solid #d1d5db;
-    transform: translateX(-25%) rotate(45deg);
-    height: 16px;
-    width: 16px;
-    color: #757BB1;
+
+.slider-card h4{
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 7px;
+    margin-top: 40px;
+
 }
+.slider-card p{
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.slider-actions{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -92px;
+    margin-right: -92px;
+    margin-top: -166px;
+}
+
+.slider-actions #slider-prev, #slider-next{
+    width: 66px;
+    height: 66px;
+    background: #FFFFFF;
+    opacity: 0.5;
+    border: 1px solid #C4CAFB;
+    border-radius: 50px;
+}
+
+.slider-actions i{
+    font-size: 20px;
+}
+
+.bulletpoint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+

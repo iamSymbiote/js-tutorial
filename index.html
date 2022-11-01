@@ -6,30 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Tutorial - Slider</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/22e113100f.js" crossorigin="anonymous"></script>
     <script src="./index.js" type="text/javascript"></script>
 </head>
 <body>
 
-    <div class="slider">
-        <div class="slider-head">
-            <h1>Search educational resources</h1>
-        </div>
-        <div class="slider-wrap">
-            <div class="slider-box">
-                <img src="https://cdn-icons-png.flaticon.com/512/3176/3176396.png" alt="">
-                <p>Share suggestions, ask questions, and connect with other users and top contributors in the Search community forum.</p>
-                <div class="arrow-l"></div>
+    <div class="container">
+        <h1 class="title">Search educational resources</h1>
+        <div class="slider-container">
+            
+            <div class="slider-wrapper">
+                <div class="slider-slide">
+                    <a class="slider-card" href="javascript:;">
+                        <figure class="slider-figure">
+                            <div class="img-wrap">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3176/3176396.png" alt="" width="54" height="54">
+                            </div>
+                            <figcaption>
+                                <h4>Search forum</h4>
+                                <p>Share suggestions, ask questions, and connect with other users and top contributors
+                                    in the Search community forum.</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                
+                <div class="slider-slide">
+                    <a class="slider-card" href="javascript:;">
+                        <figure class="slider-figure">
+                            <div class="img-wrap">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3176/3176396.png" alt="" width="54" height="54">
+                            </div>
+                            <figcaption>
+                                <h4>Inside app</h4>
+                                <p>Get the most out with the latest additions to Settings.</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
-            <div class="slider-box">
-                <img src="https://cdn-icons-png.flaticon.com/512/3176/3176396.png" alt="">
-                <p>Get the most out with the latest additions to Settings.</p>
-                <div class="arrow-r"></div>
+
+            <div class="slider-actions">
+                
+                <button id="slider-prev" aria-label="Previous Slide"><i class="fa-sharp fa-solid fa-chevron-left"></i></button> 
+
+                <button id="slider-next" aria-label="Next Slide"><i class="fa-sharp fa-solid fa-chevron-right"></i></button>
             </div>
-        </div>
-        <div class="bulletpoint">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
+            <div class="bulletpoint">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+            </div>
         </div>
     </div>
     
