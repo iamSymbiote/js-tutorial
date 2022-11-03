@@ -18,18 +18,25 @@ html, body{
     text-align: center;
 }
 
-.slider-container{
+.slider{
     position: relative;
 }
 
-.slider-wrapper{
-    display: flex;
+.slider-container{
+    overflow-x: auto;
+    position: relative;
 }
 
-.slider-slide{
+.slider-wrapper {
+    display: flex;
+    transition: transform 300ms ease;
+}
+
+.slider-slide {
     width: 50%;
     box-sizing: content-box;
     margin-right: 10px;
+    flex-shrink: 0;
 }
 .slider-slide:last-child{
     margin-right: 0;
