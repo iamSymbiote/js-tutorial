@@ -27,16 +27,46 @@ window.addEventListener('resize', function() {
  }, false)
 
  var count = 1
- setInterval(function () {
+//  setInterval(function () {
+//     var slides = wrapper.querySelectorAll('.slider-slide')
+//     if (count < slides.length - 1) {
+//         var slideWidth = slides[count].clientWidth
+//         console.log(slideWidth);
+//         wrapper.style.transform = "translate3d("+ -((slideWidth + 10) * count) +"px, 0 , 0)"
+//         console.log(wrapper.style.transform);
+//     } else {
+//         wrapper.style.transform = "translate3d(0, 0 , 0)"
+//         count = 1  
+//     }
+//     ++count
+//  }, 2000)
+
+var nextslide = document.getElementById('slider-next');
+var prevslide = document.getElementById('slider-prev');
+
+nextslide.addEventListener('click', function(e){
+
+    console.log(e.currentTarget);
     var slides = wrapper.querySelectorAll('.slider-slide')
-    if (count < slides.length - 1) {
-        var slideWidth = slides[count].clientWidth
-        console.log(slideWidth);
-        wrapper.style.transform = "translate3d("+ -((slideWidth + 10) * count) +"px, 0 , 0)"
-        console.log(wrapper.style.transform);
-    } else {
-        wrapper.style.transform = "translate3d(0, 0 , 0)"
-        count = 1  
-    }
+    console.log(slides);
+    var slideWidth = slides[count].clientWidth
+    wrapper.style.transform = "translate3d("+ -((slideWidth + 10) * count) +"px, 0, 0)"
+
+
     ++count
- }, 2000)
+})
+
+
+
+// prev slide button click event
+prevslide.addEventListener('click', function(e){
+    --count
+    var slides = wrapper.querySelectorAll('.slider-slide')
+    var slideWidth = slides[count].clientWidth
+    wrapper.style.transform = "translate3d("+ -((slideWidth + 10) * count) +"px, 0, 0)"
+    if (count == 0) {
+        count = wrapper.querySelectorAll('.slider-slide').length - 1
+        var slideWidth = slides[count].clientWidth
+        wrapper.style.transform = "translate3d("+ -((slideWidth + 10) * count) +"px, 0, 0)"
+    }
+})

@@ -23,7 +23,7 @@ html, body{
 }
 
 .slider-container{
-    overflow-x: auto;
+    overflow-x: hidden;
     position: relative;
 }
 
